@@ -1,0 +1,25 @@
+Quick Notes
+
+How it Works:
+ 1. Loop n-1 times: Outer loop goes through the array n-1 times (where n is array length).
+
+ 2. Compare adjacent elements: If arr[j] > arr[j+1], swap them.
+
+ 3. Repeat: After each pass, the largest element bubbles up to its correct position.
+
+ 4. Early exit: If no swaps are made, break out of the loop early (adaptive for sorted data).
+
+Time Complexity:
+ 1. Best Case: O(n) (already sorted)
+ 2. Average Case: O(n^2) (random order)
+ 3. Worst Case: O(n^2) (reverse sorted)
+
+Space Complexity:
+ O(1) (in-place sorting)
+
+When to Use:
+ 1. Small datasets: Bubble Sort is simple and may work well for small arrays (10-20 elements).
+ 2. When memory is a constraint: Since it is an in-place algorithm, it doesn’t require extra space.
+
+When Not to Use:
+ 1. Large datasets: For large datasets, Bubble Sort is inefficient (O(n^2)), and other algorithms like Merge Sort or Quick Sort should be preferred.
