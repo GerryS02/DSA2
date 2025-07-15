@@ -1,0 +1,37 @@
+Quick Notes
+
+How it Works:
+
+ 1. Iterative Process: Start from the second element of the array and compare it with 
+    the element before it.
+ 2. Shifting Elements: If the current element is smaller than the previous one, shift 
+    the larger elements to the right to make space for the current element.
+ 3. Insert the Element: Place the current element in its correct position in the sorted 
+    part of the array.
+ 4. Repeat: Move to the next element and repeat the process until the entire array is 
+    sorted.
+
+Time Complexity:
+
+ 1. Best Case: O(n) (when the array is already sorted, only comparisons are made, no shifts).
+ 2. Average Case: O(n^2) (on average, each element is compared with half of the already 
+    sorted elements).
+ 3. Worst Case: O(n^2) (when the array is sorted in reverse order, every element needs 
+    to be compared with all previous elements).
+
+Space Complexity:
+ 1. O(1) (in-place sorting, no additional space needed).
+
+When to Use:
+
+ 1. Insertion Sort is efficient for small arrays (10-20 elements) due to its low overhead.
+ 2. It performs well when the array is nearly sorted or has only a few elements out of 
+    order.
+ 3. It is a stable sort, meaning that equal elements retain their relative order.
+
+When Not to Use:
+
+ 1. For large datasets, the O(n^2) time complexity makes Insertion Sort inefficient 
+    compared to algorithms like Merge Sort or Quick Sort.
+ 2. Insertion Sort is slow when there are many inversions in the array (elements that are out of order).
+
