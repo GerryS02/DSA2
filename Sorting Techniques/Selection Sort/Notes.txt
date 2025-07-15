@@ -1,0 +1,38 @@
+Quick Notes
+
+How it Works:
+
+ 1. Find the Minimum: Start with the first element and search for the smallest element in 
+    the remaining unsorted portion of the array.
+ 2. Swap: Swap the smallest element found with the current element at the start of the 
+    unsorted portion.
+ 3. Repeat: Move the boundary of the sorted and unsorted sections forward by one element 
+    and repeat the process until the entire array is sorted.
+
+Time Complexity:
+
+ 1. Best Case: O(n^2) (even if the array is already sorted, the algorithm still compares 
+    each element with every other element).
+ 2. Average Case: O(n^2) (requires comparing each element to the rest of the unsorted 
+    elements).
+ 3. Worst Case: O(n^2) (when the array is in reverse order, the algorithm performs the 
+    maximum number of comparisons).
+
+Space Complexity:
+ 1. O(1) (in-place sorting, no additional space needed).
+
+When to Use:
+
+ 1. Memory Constraints: Since it is an in-place algorithm, Selection Sort doesn't 
+    require extra memory (O(1)).
+ 2. Small Datasets: It works well for small datasets where the overhead of more complex 
+    algorithms like Merge Sort or Quick Sort isn’t justified.
+ 3. Simple Implementation: It's easy to implement and understand, so it can be useful 
+    for educational purposes or simple problems.
+
+When Not to Use:
+
+ 1. Large Datasets: Selection Sort is inefficient for large datasets due to its O(n^2) 
+    time complexity. Algorithms like Merge Sort or Quick Sort are better for larger datasets.
+ 2. When Stability is Needed: Selection Sort is not stable (it may change the relative 
+    order of equal elements), so if stability is important, use a stable sorting algorithm like Merge Sort.
