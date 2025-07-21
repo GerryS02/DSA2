@@ -5,17 +5,21 @@ public class Solution {
         int pivot = -1;
         int n = arr.length;
 
+        //start from the second last element and move leftwards
         for(int i=n-2; i>=0; i--){
+            //if the current element is less than the next element, it's the pivot
             if(arr[i] < arr[i+1]){
                 pivot = i;
                 break;
             }
         }
 
+        //if no pivot is found, the array is in descending order, so just reverse it
         if(pivot == -1){
             reverse(arr, 0, n-1);
         }
 
+        //find the element larger than the pivot and swap them
         for(int i=n-1; i>pivot; i--){
             if(arr[i] > arr[pivot]){
                 swap(arr, i, pivot);
@@ -23,6 +27,7 @@ public class Solution {
             }
         }
 
+        //reverse the part of the array after the pivot to get the next smallest permutation
         reverse(arr, pivot+1, n-1);
     }
 
