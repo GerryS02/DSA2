@@ -20,7 +20,7 @@ public class Solution {
             int k = n-1; //pointer k starts from the end of the array
 
             //if the current number is the same as the previous one, skip it to avoid duplicates
-            if(nums[i] == nums[i-1]) continue;
+            if(i>0 && nums[i] == nums[i-1]) continue;
 
             while(j<k){
                 sum = nums[i] + nums[j] + nums[k];
