@@ -1,6 +1,7 @@
 #include <vector>
 #include <Node.h>
 
+//root, left, right
 class Solution{
 public:
     vector<int> preorderTraversal(Node* root){
