@@ -1,7 +1,7 @@
 package Linkedlist;
 
 public class LinkedList {
-    public static Node head;  // Declare the head of the linked list
+    public static TreeNode head;  // Declare the head of the linked list
 
     // Constructor
     public LinkedList() {
@@ -10,7 +10,7 @@ public class LinkedList {
 
     // Other common methods like printList, getLength, etc. can be added here
     public void printList() {
-        Node temp = head;
+        TreeNode temp = head;
         while (temp != null) {
             System.out.print(temp.data + " -> ");
             temp = temp.next;
