@@ -1,4 +1,4 @@
-package Graph;
+import java.util.ArrayList;
 
 public class Solution2 {
     public int numProvinces(ArrayList<ArrayList<Integer>> adj, int V){
