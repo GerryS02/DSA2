@@ -43,7 +43,7 @@ public class Solution {
             ans = Math.max(ans, time);  //update maximum time
 
             // up
-            if(i-1 >= 0 && !visited[i][j] && grid[i-1][j] == 1){
+            if(i-1 >= 0 && !visited[i-1][j] && grid[i-1][j] == 1){
                 q.offer(new pair(i-1, j, time+1));
                 visited[i-1][j] = true;
             }
