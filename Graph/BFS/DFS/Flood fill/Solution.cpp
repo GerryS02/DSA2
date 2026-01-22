@@ -1,5 +1,5 @@
 #include <vector>
-
+using namespace std;
 
 class Solution{
 public:
@@ -9,8 +9,8 @@ public:
             image[i][j] == newColor || image[i][j] != orgColor){
                 return;
             }
-            
-        image[i][j] == newColor;
+
+        image[i][j] = newColor;
 
         dfs(image, i-1, j, newColor, orgColor); //top
         dfs(image, i, j+1, newColor, orgColor); //right
