@@ -24,6 +24,7 @@ public:
             adj[e[0]].push_back(e[1]);
             adj[e[1]].push_back(e[0]);
         }
+        
         for(int i=0; i<V; i++){
             if(!vis[i]){
                 count++;
