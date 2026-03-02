@@ -18,7 +18,7 @@ public:
 
         for(int i=0; i<n; i++){
 
-            if(intervals[i][0] > end){
+            if(intervals[i][0] >= end){
                 take++;
                 end = intervals[i][1];
             }
